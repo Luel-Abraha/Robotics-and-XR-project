@@ -75,7 +75,7 @@ Instead of validating only the target grid cell, the planner checks the **8-conn
 This creates an **implicit safety buffer**, ensuring paths do not pass too close to obstacles.
 
 ### 🔍 Example: Path turning away from an obstacle
-![Obstacle avoidance](media/obstacle_turning.gif)
+![Obstacle avoidance](media/avoidance.png)
 
 ---
 
@@ -88,7 +88,7 @@ The raw A* output is grid-based and may contain sharp turns. To improve motion q
 - The interpolated sequence is logged in the terminal
 
 ### 🧾 Terminal Output Example
-![Terminal output](media/terminal_waypoints.gif)
+![Terminal output](media/Terminal.png)
 
 This results in **smooth, stable trajectories** suitable for real robot execution.
 
@@ -106,7 +106,7 @@ Simulations were conducted in **Gazebo**, visualized in **RViz**.
 - Motion execution was smooth and reliable
 
 ### 🖼️ Combined RViz + Gazebo View
-![RViz and Gazebo](media/rviz_gazebo.gif)
+![RViz and Gazebo](media/rviz_results.png)
 
 ---
 
@@ -128,5 +128,5 @@ source install/setup.bash
 ros2 launch andino_custom andino_gz.launch.py
 
 
-# the PathPlannerNode in another terminal
+# launch the PathPlannerNode in another terminal
 ros2 run path_planner_example path_planner_node --ros-args -p use_sim_time:=True
