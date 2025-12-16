@@ -119,3 +119,6 @@ source install/setup.bash
 # Launch Andino robot simulation
 ros2 launch andino_custom andino_gz.launch.py
 
+
+# the PathPlannerNode in another terminal
+ros2 run path_planner_example path_planner_node --ros-args -p use_sim_time:=True
