@@ -15,7 +15,7 @@ The default straight-line planner was replaced with a **custom A\*** planner cap
 
 ## 🎥 Video Demonstration
 
-[![Andino A* Path Planning Demo](media/preview.gif)](media/andino_astar_demo.webm)
+[![Andino A* Path Planning Demo](media/preview.gif)](media/demo.webm)
 
 > Click the GIF above to watch the full simulation video (.webm format)
 
@@ -103,4 +103,19 @@ Simulations were conducted in **Gazebo**, visualized in **RViz**.
 ---
 
 ## 📂 Repository Structure
+Robotics-and-XR-project/
+├── ros2_ws/         # Custom A* planner and navigation setup
+├── exercises_ws/    # Path planner nodes and exercises
+└── media/           # GIFs, screenshots, and simulation videos
+
+## ⚙️ How to Run
+
+```bash
+# Build workspace
+cd ros2_ws
+colcon build
+source install/setup.bash
+
+# Launch Andino robot simulation
+ros2 launch andino_custom andino_gz.launch.py
 
