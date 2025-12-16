@@ -119,6 +119,8 @@ ros2 launch andino_custom andino_gz.launch.py
 
 ## 🎥 Video Demonstration
 
-<video width="100%" controls autoplay muted loop>
-  <source src="media/andino_astar_demo.webm" type="video/webm">
-</video>
+![Andino A* Path Planning Demo](media/preview.gif)
+
+▶ **Full simulation video (WEBM):**  
+[Click here to watch](media/andino_astar_demo.webm)
+
