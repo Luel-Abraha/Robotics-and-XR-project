@@ -45,19 +45,27 @@ The planner is implemented as a **custom global planner** within ROS 2. It subsc
 
 ### 🔹 A* Path Planning
 
-A* evaluates nodes using:
+The A* algorithm evaluates nodes using the cost function:
 
 \[
 f(n) = g(n) + h(n)
 \]
 
-Where:  
-- \( g(n) \) is the cost from the start  
-- \( h(n) \) is the heuristic estimate to the goal (Euclidean distance)
+Where:
 
-- Uses an **8-connected grid** for diagonal motion  
-- Evaluates neighbors using a combination of cost and heuristic  
+- \( g(n) \) is the cost from the start node to the current node  
+- \( h(n) \) is the **Euclidean distance** from the current node to the goal:
+
+\[
+h(n) = \sqrt{(x_g - x_n)^2 + (y_g - y_n)^2}
+\]
+
+Additional details:
+
+- Uses an **8-connected grid**, allowing diagonal motion  
+- Evaluates neighbors by combining \( g(n) \) and \( h(n) \)  
 - Generates an optimal or near-optimal path while avoiding obstacles
+
 
 ---
 
