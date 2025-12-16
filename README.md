@@ -115,7 +115,7 @@ ros2 launch andino_custom andino_gz.launch.py
 
 
 
-
+# Robust Path Planning for the Andino Robot Using A* Algorithm
 
 ## 🎥 Video Demonstration
 
