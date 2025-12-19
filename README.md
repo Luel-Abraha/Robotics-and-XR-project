@@ -127,6 +127,9 @@ source install/setup.bash
 # Launch Andino robot simulation
 ros2 launch andino_custom andino_gz.launch.py
 
-
+# Build workspace
+cd ros2_ws
+colcon build
+source install/setup.bash
 # launch the PathPlannerNode in another terminal
 ros2 run path_planner_example path_planner_node --ros-args -p use_sim_time:=True
