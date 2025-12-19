@@ -1,4 +1,4 @@
-# 🚀 Robust Path Planning for the Andino Robot Using A* Algorithm
+# 🚀 Robust Path Planning for  Andino Robot Using A* Algorithm
 
 **Author:** Luel A.  
 📧 luelgeb@uef.fi  
