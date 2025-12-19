@@ -128,7 +128,7 @@ source install/setup.bash
 ros2 launch andino_custom andino_gz.launch.py
 
 # Build workspace
-cd ros2_ws
+cd exercises_ws
 colcon build
 source install/setup.bash
 # launch the PathPlannerNode in another terminal
